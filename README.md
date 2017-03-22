@@ -17,3 +17,17 @@ Subscribing:
 Sending messages:
 
 `/send/_name_`
+
+## Building and running
+
+`gradle bootRun`
+
+## Deployment
+
+First, create Docker image:
+
+`gradle buildDocker`
+
+Send image to the host machine:
+
+`docker save gftpoland/zdrowieton-backend | ssh _machine_ docker load`
