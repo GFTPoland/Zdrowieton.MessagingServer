@@ -1,8 +1,16 @@
+sudo: required
+
 language: java
+
+services:
+  - docker
+
 notifications:
   email: false
+
 jdk:
   - oraclejdk8
+
 after_success:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     gradle buildDocker
