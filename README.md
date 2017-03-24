@@ -1,4 +1,5 @@
 # Back-end for Zdrowieton hackathon
+ [![Build Status](https://travis-ci.org/GFTPoland/Zdrowieton.MessagingServer.svg?branch=master)](https://travis-ci.org/GFTPoland/Zdrowieton.MessagingServer) 
  
 Information about the hackathon itself can be found [here](http://zdrowieton.pl/).
 
