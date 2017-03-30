@@ -9,5 +9,5 @@ then
 	docker stop ${containerID}
 	docker rm ${containerID}
 fi
-docker run -d -p 8080:8080 $imageName
+docker run -d -p 80:8080 $imageName
 
