@@ -19,6 +19,7 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(final StompEndpointRegistry registry) {
         registry
                 .addEndpoint("/zdrowieton-websocket")
+                .setAllowedOrigins("*")
                 .withSockJS();
     }
 }
