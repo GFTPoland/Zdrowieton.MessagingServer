@@ -1,4 +1,5 @@
 # Back-end for Zdrowieton hackathon
+ [![Build Status](https://travis-ci.org/GFTPoland/Zdrowieton.MessagingServer.svg?branch=master)](https://travis-ci.org/GFTPoland/Zdrowieton.MessagingServer) 
  
 Information about the hackathon itself can be found [here](http://zdrowieton.pl/).
 
@@ -17,3 +18,17 @@ Subscribing:
 Sending messages:
 
 `/send/_name_`
+
+## Building and running
+
+`gradle bootRun`
+
+## Deployment
+
+First, create Docker image:
+
+`gradle buildDocker`
+
+Send image to the host machine:
+
+`docker save gftpoland/zdrowieton-backend | ssh _machine_ docker load`
